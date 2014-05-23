@@ -8,17 +8,17 @@ Raw data obtained from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfi
 
 run_analysis.R constructs a tidy data set, from the raw data, following those steps :
 
-	* read the train/X_train.txt, train/subject_train.txt, y_train.txt, test/X_test.txt, test/subject_test.txt (subject id), test/y_test.txt (activity id)
-	* the files in train/Inertial Signals and test/Inertial Signals are ignored
-	* combine the files to get one set of 10299 rows and 563 columns
-	* name the columns using the content of the file features.txt
-	* only keep the columns related to mean or std of values, plus the subject and activity values
-	* precision : the columns 555 to 561 have "Mean" in their names but they aren't included, because they concern angles
-	* the set has now 10299 rows and 68 columns
-	* the "activity id" is replaced with the corresponding activity name found in activity_labels.txt
-	* the names of columns are slightly modified, to suppress the "-()" characters and "BodyBody" that appears in some names
-	* the final tidy data set keeps 68 columns and has 180 rows, each row corresponds to the means of each variable for the each subject and each activity
-	* the set is saved in tidy_data.txt, which can be loaded as a csv file with " " as separator
+* read the train/X_train.txt, train/subject_train.txt, y_train.txt, test/X_test.txt, test/subject_test.txt (subject id), test/y_test.txt (activity id)
+* the files in train/Inertial Signals and test/Inertial Signals are ignored
+* combine the files to get one set of 10299 rows and 563 columns
+* name the columns using the content of the file features.txt
+* only keep the columns related to mean or std of values, plus the subject and activity values
+* precision : the columns 555 to 561 have "Mean" in their names but they aren't included, because they concern angles
+* the set has now 10299 rows and 68 columns
+* the "activity id" is replaced with the corresponding activity name found in activity_labels.txt
+* the names of columns are slightly modified, to suppress the "-()" characters and "BodyBody" that appears in some names
+* the final tidy data set keeps 68 columns and has 180 rows, each row corresponds to the means of each variable for the each subject and each activity
+* the set is saved in tidy_data.txt, which can be loaded as a csv file with " " as separator
 
 The 68 columns in the set are :
 
