@@ -7,6 +7,7 @@ Jonathan MAURICE
 Raw data obtained from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 run_analysis.R constructs a tidy data set, from the raw data, following those steps :
+
 	* read the train/X_train.txt, train/subject_train.txt, y_train.txt, test/X_test.txt, test/subject_test.txt (subject id), test/y_test.txt (activity id)
 	* the files in train/Inertial Signals and test/Inertial Signals are ignored
 	* combine the files to get one set of 10299 rows and 563 columns
@@ -20,6 +21,7 @@ run_analysis.R constructs a tidy data set, from the raw data, following those st
 	* the set is saved in tidy_data.txt, which can be loaded as a csv file with " " as separator
 
 The 68 columns in the set are :
+
 1. tBodyAccMeanX
 2. tBodyAccMeanY
 3. tBodyAccMeanZ
